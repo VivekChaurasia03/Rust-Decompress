@@ -1,6 +1,6 @@
-## Rust Zip Compression CLI Tool
+## Rust Zip Decompression CLI Tool
 
-This project is a small CLI tool written in Rust that performs basic compression on a file provided by the user. It utilizes the `zip` crate to work with zip files.
+This project is a small CLI tool written in Rust that performs basic decompression on a file provided by the user. It utilizes the `zip` crate to work with zip files.
 
 ### Usage
 
@@ -10,7 +10,7 @@ To use the tool, run the following command:
 cargo run <filename>
 ```
 
-Replace `<filename>` with the path to the file you want to compress.
+Replace `<filename>` with the path to the file you want to unzip.
 
 ### Code Overview
 
@@ -20,7 +20,7 @@ The code follows a common pattern in Rust projects where the `main` function is 
 
 #### Command-Line Arguments
 
-The tool takes command-line arguments to determine the file to be compressed. A basic check is performed to ensure that the correct number of arguments is provided.
+The tool takes command-line arguments to determine the file to be unzipped. A basic check is performed to ensure that the correct number of arguments is provided.
 
 #### File Processing
 
@@ -55,4 +55,4 @@ cargo run <filename>
 - The tool aims to maintain the same folder structure as the zip file during extraction.
 - The logic for permissions on Linux is present but commented out until the equivalent functionality is explored for Windows.
 
-Feel free to explore, modify, and contribute to this Rust CLI compression tool!
+Feel free to explore, modify, and contribute to this Rust CLI decompression tool!
